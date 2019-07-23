@@ -6,6 +6,7 @@ node{
             sh 'ls -l'
             sh 'gcc -o output file.c'
             sh 'ls -l'
+            sh './output'
     }
 }    
 }
