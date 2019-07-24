@@ -1,7 +1,7 @@
 node{
     stage('building docker image from local registry'){
         checkout scm
-        def local_image = docker.build("ubuntu_remote_localreg")
+        def local_image = docker.build("ubuntu_remote_localreg1")
         local_image.inside {
             sh 'ls -l'
             sh 'gcc -o output file.c'
