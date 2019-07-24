@@ -8,5 +8,8 @@ node{
             sh 'ls -l'
             sh './output'
     }
+    stage('Cleaning Workspace'){
+        cleanWs cleanWhenSuccess: false
+    }
 }    
 }
