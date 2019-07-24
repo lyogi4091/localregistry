@@ -3,8 +3,8 @@ node{
         checkout scm
         def local_image = docker.build("ubuntu_remote_localreg")
         local_image.inside {
-            sh 'ls -lfdf'
-            sh 'gcc -o output file.c'
+            sh 'ls -l'
+            sh 'gcc -o output file.'
             sh 'ls -l'
             sh './output'
     }
