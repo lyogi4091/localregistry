@@ -9,7 +9,7 @@ node{
             sh './output'
     }
     stage('Cleaning Workspace'){
-        cleanWs cleanWhenSuccess: false
+        cleanWs cleanWhenAborted: false, cleanWhenFailure: false, cleanWhenNotBuilt: false, cleanWhenUnstable: false
     }
 }    
 }
